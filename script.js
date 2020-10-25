@@ -74,7 +74,7 @@ $(document).ready(() => {
     }
 
     function getUVIndex() {
-        var queryURL = "http://api.openweathermap.org/data/2.5/uvi?lat=" + currentCityWeather.coord.lat + "&lon=" + currentCityWeather.coord.lon + "&appid=" + apiKey;
+        var queryURL = "https://api.openweathermap.org/data/2.5/uvi?lat=" + currentCityWeather.coord.lat + "&lon=" + currentCityWeather.coord.lon + "&appid=" + apiKey;
         $.ajax({
             url: queryURL,
             method: 'GET'
@@ -90,7 +90,7 @@ $(document).ready(() => {
     }
 
     function get5DayForecast() {
-        var queryURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + currentCity + "&appid=" + apiKey;
+        var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + currentCity + "&appid=" + apiKey;
         $.ajax({
             url: queryURL,
             method: 'GET'
