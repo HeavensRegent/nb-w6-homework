@@ -6,4 +6,4 @@ This allows users to search a city and get the current information along with a 
 
 ## View yourself
 
-![Screenshot](https://heavensregent.github.io/nb-w6-homework/)
+![Weather Dashboard](https://heavensregent.github.io/nb-w6-homework/)
