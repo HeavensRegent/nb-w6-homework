@@ -10,11 +10,35 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <title></title>
+  <title>Weather Dashboard</title>
 </head>
 
 <body>
-
+  <nav class="nav justify-content-center bg-dark text-light">
+    <h1>Weather Dashboard</h1>
+  </nav>
+  <main class="row ml-3">
+    <aside class="col-md-3">
+      <h4>Search for a City:</h4>
+      <!-- Search form -->
+      <form class="form-inline d-flex md-form form-sm">
+        <input class="form-control form-control-sm mr-3 w-75 city-search" type="text" placeholder="Search"
+          aria-label="Search">
+        <i class="fas fa-search" aria-hidden="true"></i>
+      </form>
+      <div class="cities"></div>
+    </aside>
+    <section class="col-md-9">
+      <div class="card text-left">
+        <div class="card-body current-weather">
+          <p class="card-text">Body</p>
+        </div>
+      </div>
+      <div class="row forecast">
+        <h3>5-Day Forecast:</h3>
+      </div>
+    </section>
+  </main>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="script.js"></script>
